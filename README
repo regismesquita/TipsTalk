@@ -1,3 +1,11 @@
-Mash-up do twitter com o gtalk criado para utilização no tips talk , apresenta alguns problemas que causam crashes ocasionais , cabe revisão no codigo.
+Short Description: This Software is a Twitter client that uses gtalk as interface.
+Version: 0.1 First Release
 
-Primeira versão disponibilizada , todo codigo está sob GPLv3
+History:
+This was first created as (TipsTalk) a twitter/gtalk integration
+made using a gtalk bot intended to make life easier to the user
+but we saw a good potential in the bot and decided to fork the
+project to develop focused on the bot.
+
+And now the proud son returns home and shares his wisdom with
+his father.

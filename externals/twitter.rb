@@ -2,11 +2,8 @@
 #This file is intended to implement a twitter tool.
 #
 ActiveRecord::Base.establish_connection(  
- :adapter => "mysql",  
- :host => "localhost",
- :database => "",
- :username => "",
- :password => "",
+ :adapter => "sqlite3",  
+ :database => "test.db",
 )  
 
 class Tipstalk < ActiveRecord::Base #Database containg O auth authorizations

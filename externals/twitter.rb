@@ -3,7 +3,7 @@
 #
 ActiveRecord::Base.establish_connection(  
  :adapter => "sqlite3",  
- :database => "test.db",
+ :database => "test.db"
 )  
 
 class Tipstalk < ActiveRecord::Base #Database containg O auth authorizations
@@ -135,13 +135,4 @@ Robot.add_method("last",lambda{|mes,im|
 })
 
 
-#Administrative Function
-Robot.add_method("check-all",lambda{|mes,im|
-	im.deliver(mes.from,Twt.all.inspect)
-})
-#Example External-function (Echo)
-Robot.add_method("echo",lambda{|mes,im|
-	message = mes.body
-	message['echo']=''
-	im.deliver(mes.from,message)
-})
+

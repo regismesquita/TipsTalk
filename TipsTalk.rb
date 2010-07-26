@@ -22,6 +22,7 @@ puts "Connected."
 
 puts "Entering in Activity."
 while true
-	sleep(5)
-	@robot.verificarMensagens
+  sleep(5)
+  @robot.receiveMessages
+  @robot.processMessages
 end

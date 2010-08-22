@@ -1,8 +1,4 @@
 #Administrative Function
-Robot.add_method("check-all",lambda{|mes,im|
-  im.deliver(mes.from,Twt.all.inspect)
-})
-
 Robot.add_method('debug-on',lambda{|mes,im|
 $DEBUG = true
 im.deliver(mes.from,"debug enabled")

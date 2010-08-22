@@ -9,13 +9,12 @@ class Message
     if self.get_method
       self.call_method_from_message
     else
-      @im.deliver(@message.from,"Function #{metodo.inspect} does not exist")
-      @im.deliver(@message.from,"Avaliable Functions: #{@@methods.keys.inspect}.") if $DEBUG
+      @im.deliver(@message.from,"Function does not exist")
     end
   end
 
   def get_method
-    method_name = message.body.split(' ').first 
+    method_name = @message.body.split(' ').first 
     method = Robot.bot_methods[method_name]
   end
 
